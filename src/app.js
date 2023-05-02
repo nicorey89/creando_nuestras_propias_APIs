@@ -29,8 +29,8 @@ app.use(methodOverride('_method'));
 app.use('/', indexRouter);
 app.use(moviesRoutes);
 app.use(genresRoutes);
-app.use(apiGenresRoutes);
-app.use(apiMoviesRoutes);
+app.use('/api/genres',apiGenresRoutes);
+app.use('/api/movies',apiMoviesRoutes);
 
 
 //Activando el servidor desde express
